@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		AD5D63DF2E1EAE5F006F88C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5D63C92E1EAE5E006F88C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD5D63D02E1EAE5E006F88C3;
+			remoteInfo = pantry;
+		};
+		AD5D63E92E1EAE5F006F88C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5D63C92E1EAE5E006F88C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD5D63D02E1EAE5E006F88C3;
+			remoteInfo = pantry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD5D63D12E1EAE5E006F88C3 /* pantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5D63DE2E1EAE5F006F88C3 /* pantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5D63E82E1EAE5F006F88C3 /* pantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AD5D63D32E1EAE5E006F88C3 /* pantry */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = pantry;
+			sourceTree = "<group>";
+		};
+		AD5D63E12E1EAE5F006F88C3 /* pantryTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = pantryTests;
+			sourceTree = "<group>";
+		};
+		AD5D63EB2E1EAE5F006F88C3 /* pantryUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = pantryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD5D63CE2E1EAE5E006F88C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5D63DB2E1EAE5F006F88C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5D63E52E1EAE5F006F88C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD5D63C82E1EAE5E006F88C3 = {
+			isa = PBXGroup;
+			children = (
+				AD5D63D32E1EAE5E006F88C3 /* pantry */,
+				AD5D63E12E1EAE5F006F88C3 /* pantryTests */,
+				AD5D63EB2E1EAE5F006F88C3 /* pantryUITests */,
+				AD5D63D22E1EAE5E006F88C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD5D63D22E1EAE5E006F88C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD5D63D12E1EAE5E006F88C3 /* pantry.app */,
+				AD5D63DE2E1EAE5F006F88C3 /* pantryTests.xctest */,
+				AD5D63E82E1EAE5F006F88C3 /* pantryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD5D63D02E1EAE5E006F88C3 /* pantry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5D63F22E1EAE5F006F88C3 /* Build configuration list for PBXNativeTarget "pantry" */;
+			buildPhases = (
+				AD5D63CD2E1EAE5E006F88C3 /* Sources */,
+				AD5D63CE2E1EAE5E006F88C3 /* Frameworks */,
+				AD5D63CF2E1EAE5E006F88C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AD5D63D32E1EAE5E006F88C3 /* pantry */,
+			);
+			name = pantry;
+			packageProductDependencies = (
+			);
+			productName = pantry;
+			productReference = AD5D63D12E1EAE5E006F88C3 /* pantry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD5D63DD2E1EAE5F006F88C3 /* pantryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5D63F52E1EAE5F006F88C3 /* Build configuration list for PBXNativeTarget "pantryTests" */;
+			buildPhases = (
+				AD5D63DA2E1EAE5F006F88C3 /* Sources */,
+				AD5D63DB2E1EAE5F006F88C3 /* Frameworks */,
+				AD5D63DC2E1EAE5F006F88C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD5D63E02E1EAE5F006F88C3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AD5D63E12E1EAE5F006F88C3 /* pantryTests */,
+			);
+			name = pantryTests;
+			packageProductDependencies = (
+			);
+			productName = pantryTests;
+			productReference = AD5D63DE2E1EAE5F006F88C3 /* pantryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD5D63E72E1EAE5F006F88C3 /* pantryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5D63F82E1EAE5F006F88C3 /* Build configuration list for PBXNativeTarget "pantryUITests" */;
+			buildPhases = (
+				AD5D63E42E1EAE5F006F88C3 /* Sources */,
+				AD5D63E52E1EAE5F006F88C3 /* Frameworks */,
+				AD5D63E62E1EAE5F006F88C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD5D63EA2E1EAE5F006F88C3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AD5D63EB2E1EAE5F006F88C3 /* pantryUITests */,
+			);
+			name = pantryUITests;
+			packageProductDependencies = (
+			);
+			productName = pantryUITests;
+			productReference = AD5D63E82E1EAE5F006F88C3 /* pantryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD5D63C92E1EAE5E006F88C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					AD5D63D02E1EAE5E006F88C3 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					AD5D63DD2E1EAE5F006F88C3 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = AD5D63D02E1EAE5E006F88C3;
+					};
+					AD5D63E72E1EAE5F006F88C3 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = AD5D63D02E1EAE5E006F88C3;
+					};
+				};
+			};
+			buildConfigurationList = AD5D63CC2E1EAE5E006F88C3 /* Build configuration list for PBXProject "pantry" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD5D63C82E1EAE5E006F88C3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AD5D63D22E1EAE5E006F88C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD5D63D02E1EAE5E006F88C3 /* pantry */,
+				AD5D63DD2E1EAE5F006F88C3 /* pantryTests */,
+				AD5D63E72E1EAE5F006F88C3 /* pantryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD5D63CF2E1EAE5E006F88C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5D63DC2E1EAE5F006F88C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5D63E62E1EAE5F006F88C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD5D63CD2E1EAE5E006F88C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5D63DA2E1EAE5F006F88C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5D63E42E1EAE5F006F88C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD5D63E02E1EAE5F006F88C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD5D63D02E1EAE5E006F88C3 /* pantry */;
+			targetProxy = AD5D63DF2E1EAE5F006F88C3 /* PBXContainerItemProxy */;
+		};
+		AD5D63EA2E1EAE5F006F88C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD5D63D02E1EAE5E006F88C3 /* pantry */;
+			targetProxy = AD5D63E92E1EAE5F006F88C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD5D63F02E1EAE5F006F88C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD5D63F12E1EAE5F006F88C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD5D63F32E1EAE5F006F88C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mnicasio.pantry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD5D63F42E1EAE5F006F88C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mnicasio.pantry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD5D63F62E1EAE5F006F88C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mnicasio.pantryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pantry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pantry";
+			};
+			name = Debug;
+		};
+		AD5D63F72E1EAE5F006F88C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mnicasio.pantryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pantry.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pantry";
+			};
+			name = Release;
+		};
+		AD5D63F92E1EAE5F006F88C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mnicasio.pantryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pantry;
+			};
+			name = Debug;
+		};
+		AD5D63FA2E1EAE5F006F88C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mnicasio.pantryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pantry;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD5D63CC2E1EAE5E006F88C3 /* Build configuration list for PBXProject "pantry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5D63F02E1EAE5F006F88C3 /* Debug */,
+				AD5D63F12E1EAE5F006F88C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5D63F22E1EAE5F006F88C3 /* Build configuration list for PBXNativeTarget "pantry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5D63F32E1EAE5F006F88C3 /* Debug */,
+				AD5D63F42E1EAE5F006F88C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5D63F52E1EAE5F006F88C3 /* Build configuration list for PBXNativeTarget "pantryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5D63F62E1EAE5F006F88C3 /* Debug */,
+				AD5D63F72E1EAE5F006F88C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5D63F82E1EAE5F006F88C3 /* Build configuration list for PBXNativeTarget "pantryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5D63F92E1EAE5F006F88C3 /* Debug */,
+				AD5D63FA2E1EAE5F006F88C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD5D63C92E1EAE5E006F88C3 /* Project object */;
+}
