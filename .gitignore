@@ -1,0 +1,61 @@
+//
+//  .gitignore
+//  pantry
+//
+//  Created by Marcelino Nicasio on 8/3/25.
+//
+
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# SwiftPM
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+
+# Archives & Products
+*.xcarchive
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# AppCode
+.idea/
+
+# Logs
+*.log
+
+# Temporary
+*.swp
+*.lock
+*.tmp
+
+# Env files / secrets
+*.env
+.env.*
+
