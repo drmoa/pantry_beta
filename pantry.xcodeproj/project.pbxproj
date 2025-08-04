@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AD38FF8B2E3FE39600DBDB8F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = AD38FF8A2E3FE39600DBDB8F /* CodeScanner */; };
+		ADA09BCC2E4002E000E02FF0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ADA09BCB2E4002D500E02FF0 /* .gitignore */; };
+		ADA09BDD2E416DB300E02FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA09BD62E416DB300E02FF0 /* Assets.xcassets */; };
+		ADA09BDF2E416DB300E02FF0 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA09BD52E416DB300E02FF0 /* AddItemView.swift */; };
+		ADA09BE02E416DB300E02FF0 /* ScanItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA09BDB2E416DB300E02FF0 /* ScanItemView.swift */; };
+		ADA09BE12E416DB300E02FF0 /* pantryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA09BDA2E416DB300E02FF0 /* pantryItem.swift */; };
+		ADA09BE22E416DB300E02FF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA09BD72E416DB300E02FF0 /* ContentView.swift */; };
+		ADA09BE32E416DB300E02FF0 /* pantryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA09BD92E416DB300E02FF0 /* pantryApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,17 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD5D63D12E1EAE5E006F88C3 /* pantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD5D63DE2E1EAE5F006F88C3 /* pantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD5D63E82E1EAE5F006F88C3 /* pantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA09BCB2E4002D500E02FF0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		ADA09BD52E416DB300E02FF0 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		ADA09BD62E416DB300E02FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADA09BD72E416DB300E02FF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADA09BD82E416DB300E02FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA09BD92E416DB300E02FF0 /* pantryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantryApp.swift; sourceTree = "<group>"; };
+		ADA09BDA2E416DB300E02FF0 /* pantryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantryItem.swift; sourceTree = "<group>"; };
+		ADA09BDB2E416DB300E02FF0 /* ScanItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanItemView.swift; sourceTree = "<group>"; };
+		ADA09BE42E41703000E02FF0 /* pantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = pantry.app; path = "/Users/marcelinonicasio/dev/pantry/build/Debug-iphoneos/pantry.app"; sourceTree = "<absolute>"; };
+		ADA09BE52E4171D100E02FF0 /* pantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = pantryTests.xctest; path = "/Users/marcelinonicasio/dev/pantry/build/Debug-iphoneos/pantry.app/PlugIns/pantryTests.xctest"; sourceTree = "<absolute>"; };
+		ADA09BE62E4171D100E02FF0 /* pantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = pantryUITests.xctest; path = "/Users/marcelinonicasio/dev/pantry/build/Debug-iphoneos/pantryUITests-Runner.app/PlugIns/pantryUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AD5D63D32E1EAE5E006F88C3 /* pantry */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = pantry;
-			sourceTree = "<group>";
-		};
 		AD5D63E12E1EAE5F006F88C3 /* pantryTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = pantryTests;
@@ -87,22 +97,26 @@
 		AD5D63C82E1EAE5E006F88C3 = {
 			isa = PBXGroup;
 			children = (
-				AD5D63D32E1EAE5E006F88C3 /* pantry */,
+				ADA09BCB2E4002D500E02FF0 /* .gitignore */,
 				AD5D63E12E1EAE5F006F88C3 /* pantryTests */,
 				AD5D63EB2E1EAE5F006F88C3 /* pantryUITests */,
 				AD38FF892E3FE39600DBDB8F /* Frameworks */,
-				AD5D63D22E1EAE5E006F88C3 /* Products */,
+				ADA09BDC2E416DB300E02FF0 /* pantryApp */,
 			);
 			sourceTree = "<group>";
 		};
-		AD5D63D22E1EAE5E006F88C3 /* Products */ = {
+		ADA09BDC2E416DB300E02FF0 /* pantryApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD5D63D12E1EAE5E006F88C3 /* pantry.app */,
-				AD5D63DE2E1EAE5F006F88C3 /* pantryTests.xctest */,
-				AD5D63E82E1EAE5F006F88C3 /* pantryUITests.xctest */,
+				ADA09BD52E416DB300E02FF0 /* AddItemView.swift */,
+				ADA09BD62E416DB300E02FF0 /* Assets.xcassets */,
+				ADA09BD72E416DB300E02FF0 /* ContentView.swift */,
+				ADA09BD82E416DB300E02FF0 /* Info.plist */,
+				ADA09BD92E416DB300E02FF0 /* pantryApp.swift */,
+				ADA09BDA2E416DB300E02FF0 /* pantryItem.swift */,
+				ADA09BDB2E416DB300E02FF0 /* ScanItemView.swift */,
 			);
-			name = Products;
+			path = pantryApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,15 +134,12 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				AD5D63D32E1EAE5E006F88C3 /* pantry */,
-			);
 			name = pantry;
 			packageProductDependencies = (
 				AD38FF8A2E3FE39600DBDB8F /* CodeScanner */,
 			);
 			productName = pantry;
-			productReference = AD5D63D12E1EAE5E006F88C3 /* pantry.app */;
+			productReference = ADA09BE42E41703000E02FF0 /* pantry.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AD5D63DD2E1EAE5F006F88C3 /* pantryTests */ = {
@@ -151,7 +162,7 @@
 			packageProductDependencies = (
 			);
 			productName = pantryTests;
-			productReference = AD5D63DE2E1EAE5F006F88C3 /* pantryTests.xctest */;
+			productReference = ADA09BE52E4171D100E02FF0 /* pantryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AD5D63E72E1EAE5F006F88C3 /* pantryUITests */ = {
@@ -174,7 +185,7 @@
 			packageProductDependencies = (
 			);
 			productName = pantryUITests;
-			productReference = AD5D63E82E1EAE5F006F88C3 /* pantryUITests.xctest */;
+			productReference = ADA09BE62E4171D100E02FF0 /* pantryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +224,7 @@
 				AD38FF852E3FE12F00DBDB8F /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = AD5D63D22E1EAE5E006F88C3 /* Products */;
+			productRefGroup = AD5D63C82E1EAE5E006F88C3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -229,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA09BDD2E416DB300E02FF0 /* Assets.xcassets in Resources */,
+				ADA09BCC2E4002E000E02FF0 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA09BDF2E416DB300E02FF0 /* AddItemView.swift in Sources */,
+				ADA09BE02E416DB300E02FF0 /* ScanItemView.swift in Sources */,
+				ADA09BE12E416DB300E02FF0 /* pantryItem.swift in Sources */,
+				ADA09BE22E416DB300E02FF0 /* ContentView.swift in Sources */,
+				ADA09BE32E416DB300E02FF0 /* pantryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -395,6 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -412,8 +432,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Q5MW99C6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/marcelinonicasio/dev/pantry/pantryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,8 +461,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Q5MW99C6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/marcelinonicasio/dev/pantry/pantryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
