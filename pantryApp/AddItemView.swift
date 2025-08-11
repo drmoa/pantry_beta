@@ -9,8 +9,7 @@ import SwiftUI
 
 struct AddItemView: View {
     @Environment(\.dismiss) var dismiss
-
-    @Binding var pantryItems: [PantryItem]
+    @ObservedObject var viewModel: PantryViewModel
 
     @State private var name = ""
     @State private var quantity = 1
@@ -20,6 +19,7 @@ struct AddItemView: View {
         NavigationView {
             Form {
                 TextField("Item name", text: $name)
+                    .autocapitalization(.words)
                 Stepper("Quantity: \(quantity)", value: $quantity, in: 1...100)
                 DatePicker("Expiration Date", selection: $expirationDate, displayedComponents: .date)
             }
@@ -30,10 +30,10 @@ struct AddItemView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        let newItem = PantryItem(name: name, quantity: quantity, expirationDate: expirationDate)
-                        pantryItems.append(newItem)
+                        viewModel.addItem(name: name, quantity: quantity, expirationDate: expirationDate)
                         dismiss()
-                    }.disabled(name.isEmpty)
+                    }
+                    .disabled(name.isEmpty)
                 }
             }
         }

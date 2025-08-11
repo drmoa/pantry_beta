@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD38FF8B2E3FE39600DBDB8F /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = AD38FF8A2E3FE39600DBDB8F /* CodeScanner */; };
+		AD8BA4A02E49A0AF00032765 /* PantryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8BA49F2E49A0A500032765 /* PantryViewModel.swift */; };
 		ADA09BCC2E4002E000E02FF0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ADA09BCB2E4002D500E02FF0 /* .gitignore */; };
 		ADA09BDD2E416DB300E02FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA09BD62E416DB300E02FF0 /* Assets.xcassets */; };
 		ADA09BDF2E416DB300E02FF0 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA09BD52E416DB300E02FF0 /* AddItemView.swift */; };
@@ -35,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD8BA4962E496FFF00032765 /* pantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pantry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8BA4972E496FFF00032765 /* pantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8BA4982E496FFF00032765 /* pantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pantryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8BA49F2E49A0A500032765 /* PantryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewModel.swift; sourceTree = "<group>"; };
 		ADA09BCB2E4002D500E02FF0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ADA09BD52E416DB300E02FF0 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		ADA09BD62E416DB300E02FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,9 +48,6 @@
 		ADA09BD92E416DB300E02FF0 /* pantryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantryApp.swift; sourceTree = "<group>"; };
 		ADA09BDA2E416DB300E02FF0 /* pantryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantryItem.swift; sourceTree = "<group>"; };
 		ADA09BDB2E416DB300E02FF0 /* ScanItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanItemView.swift; sourceTree = "<group>"; };
-		ADA09BE42E41703000E02FF0 /* pantry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = pantry.app; path = "/Users/marcelinonicasio/dev/pantry/build/Debug-iphoneos/pantry.app"; sourceTree = "<absolute>"; };
-		ADA09BE52E4171D100E02FF0 /* pantryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = pantryTests.xctest; path = "/Users/marcelinonicasio/dev/pantry/build/Debug-iphoneos/pantry.app/PlugIns/pantryTests.xctest"; sourceTree = "<absolute>"; };
-		ADA09BE62E4171D100E02FF0 /* pantryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = pantryUITests.xctest; path = "/Users/marcelinonicasio/dev/pantry/build/Debug-iphoneos/pantryUITests-Runner.app/PlugIns/pantryUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -102,12 +104,16 @@
 				AD5D63EB2E1EAE5F006F88C3 /* pantryUITests */,
 				AD38FF892E3FE39600DBDB8F /* Frameworks */,
 				ADA09BDC2E416DB300E02FF0 /* pantryApp */,
+				AD8BA4962E496FFF00032765 /* pantry.app */,
+				AD8BA4972E496FFF00032765 /* pantryTests.xctest */,
+				AD8BA4982E496FFF00032765 /* pantryUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		ADA09BDC2E416DB300E02FF0 /* pantryApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD8BA49F2E49A0A500032765 /* PantryViewModel.swift */,
 				ADA09BD52E416DB300E02FF0 /* AddItemView.swift */,
 				ADA09BD62E416DB300E02FF0 /* Assets.xcassets */,
 				ADA09BD72E416DB300E02FF0 /* ContentView.swift */,
@@ -139,7 +145,7 @@
 				AD38FF8A2E3FE39600DBDB8F /* CodeScanner */,
 			);
 			productName = pantry;
-			productReference = ADA09BE42E41703000E02FF0 /* pantry.app */;
+			productReference = AD8BA4962E496FFF00032765 /* pantry.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AD5D63DD2E1EAE5F006F88C3 /* pantryTests */ = {
@@ -162,7 +168,7 @@
 			packageProductDependencies = (
 			);
 			productName = pantryTests;
-			productReference = ADA09BE52E4171D100E02FF0 /* pantryTests.xctest */;
+			productReference = AD8BA4972E496FFF00032765 /* pantryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AD5D63E72E1EAE5F006F88C3 /* pantryUITests */ = {
@@ -185,7 +191,7 @@
 			packageProductDependencies = (
 			);
 			productName = pantryUITests;
-			productReference = ADA09BE62E4171D100E02FF0 /* pantryUITests.xctest */;
+			productReference = AD8BA4982E496FFF00032765 /* pantryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -270,6 +276,7 @@
 				ADA09BE02E416DB300E02FF0 /* ScanItemView.swift in Sources */,
 				ADA09BE12E416DB300E02FF0 /* pantryItem.swift in Sources */,
 				ADA09BE22E416DB300E02FF0 /* ContentView.swift in Sources */,
+				AD8BA4A02E49A0AF00032765 /* PantryViewModel.swift in Sources */,
 				ADA09BE32E416DB300E02FF0 /* pantryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

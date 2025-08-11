@@ -7,86 +7,67 @@
 
 import SwiftUI
 
-enum ActiveSheet: Identifiable {
-    case addItem, scanItem
-
-    var id: Int {
-        hashValue
-    }
-}
-
 struct ContentView: View {
-    @State private var pantryItems: [PantryItem] = []
-    @State private var activeSheet: ActiveSheet? = nil
-    @State private var scannedCode: String? = nil
-    
+    @StateObject private var viewModel = PantryViewModel()
+    @State private var showingAddItem = false
+    @State private var showingScanner = false
+    @State private var scannedCode: String?
+
     var body: some View {
         NavigationView {
             List {
-                ForEach(pantryItems) { item in
-                    VStack(alignment: .leading) {
-                        Text(item.name).font(.headline)
-                        Text("Qty: \(item.quantity) • Exp: \(item.expirationDate.formatted(.dateTime.month().day().year()))")
-                            .font(.subheadline).foregroundColor(.gray)
-                    }
+                ForEach(viewModel.pantryItems) { item in
+                    PantryItemRow(item: item)
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: viewModel.deleteItems)
             }
-            .navigationTitle("My Pantry")
+            .navigationTitle("Pantry")
             .toolbar {
-                // NEW: Scan button on the left
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        activeSheet = .scanItem
+                        showingScanner = true
                     } label: {
-                        Label("Scan", systemImage: "barcode.viewfinder")
+                        Image(systemName: "barcode.viewfinder")
                     }
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
+
                     Button {
-                        activeSheet = .addItem
+                        showingAddItem = true
                     } label: {
                         Image(systemName: "plus")
                     }
                 }
             }
-            .sheet(item: $activeSheet) { sheet in
-                switch sheet {
-                case .addItem:
-                    AddItemView(pantryItems: $pantryItems)
-                case .scanItem:
-                    ScanItemView(scannedCode: $scannedCode)
+            .sheet(isPresented: $showingAddItem) {
+                AddItemView(viewModel: viewModel)
+            }
+            .sheet(isPresented: $showingScanner) {
+                ScanItemView(scannedCode: $scannedCode)
+            }
+            .onChange(of: scannedCode) {
+                if let code = scannedCode {
+                    print("Scanned barcode in ContentView: \(code)")
                 }
             }
-            .onAppear {
-                pantryItems = loadPantryItems()
-            }
-            .onChange(of: pantryItems) {
-                savePantryItems()
-            }
         }
     }
-    
-    func deleteItems(at offsets: IndexSet) {
-        pantryItems.remove(atOffsets: offsets)
-    }
-    
-    // 📌 Persistence helper: load saved items
-    func loadPantryItems() -> [PantryItem] {
-        if let data = UserDefaults.standard.data(forKey: "pantryItems") {
-            let decoder = JSONDecoder()
-            if let decoded = try? decoder.decode([PantryItem].self, from: data) {
-                return decoded
-            }
+}
+
+struct PantryItemRow: View {
+    let item: PantryItem
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(item.name)
+                .font(.headline)
+            Text("Qty: \(item.quantity) • Exp: \(item.expirationDate.formatted(.dateTime.month().day().year()))")
+                .font(.subheadline)
+                .foregroundColor(.gray)
         }
-        return []
     }
-    
-    // 📌 Persistence helper: save items
-    func savePantryItems() {
-        let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(pantryItems) {
-            UserDefaults.standard.set(encoded, forKey: "pantryItems")
-        }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
