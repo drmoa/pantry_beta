@@ -8,17 +8,19 @@
 import Foundation
 
 class PantryViewModel: ObservableObject {
+    /*
+     This is the data layer with add/delete/load/save logic using UserDefaults (**WILL USE CORE DATA SOON**).
+     */
     @Published var pantryItems: [PantryItem] = []
     
     init() {
         loadPantryItems()
     }
     
-    func addItem(name: String, quantity: Int, expirationDate: Date) {
-        let newItem = PantryItem(name: name, quantity: quantity, expirationDate: expirationDate)
-        pantryItems.append(newItem)
-        savePantryItems()
+    func addItem(_ item: PantryItem) {
+        pantryItems.append(item)
     }
+
     
     func deleteItems(at offsets: IndexSet) {
         pantryItems.remove(atOffsets: offsets)
@@ -30,8 +32,7 @@ class PantryViewModel: ObservableObject {
             let decoder = JSONDecoder()
             if let decoded = try? decoder.decode([PantryItem].self, from: data) {
                 pantryItems = decoded
-                return
-            }
+                return            }
         }
         pantryItems = []
     }

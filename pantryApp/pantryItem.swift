@@ -1,6 +1,5 @@
 //
-//  Untitled.swift
-//  pantry
+//  pantryItem.swift
 //
 //  Created by Marcelino Nicasio on 7/9/25.
 //
